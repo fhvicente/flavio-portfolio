@@ -13,7 +13,9 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="font-bold">
-            <span className="text-primary">Flávio's </span>Portfolio
+            <a href="/">
+              <span className="text-primary">Flávio's </span>Portfolio
+            </a>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">

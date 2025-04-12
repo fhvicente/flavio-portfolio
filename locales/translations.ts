@@ -8,13 +8,12 @@ export const translations = {
     getInTouch: "Get in touch",
     
     // Hero
-    // heroTitle: "Full Stack Developer",
-    // heroSubtitle: "I build beautiful and functional web applications",
     heroDescription: "Every line of code is a step in my growth.",
     
     // About
     aboutTitle: "About Me",
-    aboutDescription: "I'm a passionate full stack developer with experience in building web applications using modern technologies. I focus on creating intuitive user interfaces and robust backend systems. I'm always eager to learn new technologies and improve my skills.",
+    aboutDesc1: "I'm a fast learner and dedicated full stack developer, always focused on growing a little more every day. I dive deep into each project with curiosity and commitment, aiming to build clean, efficient solutions that make a difference. From frontend to backend, I'm constantly evolving and pushing my skills to the next level.",
+    aboutDesc2: "My journey in software development began in 2022 when I completed a TESP in Systems and IT Technologies (2022-2024). Afterward, I gained practical experience through a 6-month internship, which allowed me to apply my skills in real-world projects. Now, I'm pursuing a degree in Engineering of Systems and IT Technologies to continue evolving as a developer. Along the way, I've worked on a range of projects, from APIs to data-driven Micro SaaS tools, always striving to learn and adapt to new technologies to deliver the best solutions.",
     
     // Skills
     skillsTitle: "Skills & Technologies",
@@ -69,7 +68,8 @@ export const translations = {
     
     // About
     aboutTitle: "Sobre Mim",
-    aboutDescription: "Sou um desenvolvedor full stack apaixonado com experiência na construção de aplicações web usando tecnologias modernas. Concentro-me em criar interfaces de usuário intuitivas e sistemas de backend robustos. Estou sempre ansioso para aprender novas tecnologias e melhorar minhas habilidades.",
+    aboutDesc1: "Sou um desenvolvedor full stack dedicado e de aprendizado rápido, sempre focado em crescer um pouco mais a cada dia. Mergulho profundamente em cada projeto com curiosidade e compromisso, buscando construir soluções limpas e eficientes que façam a diferença. Do frontend ao backend, estou constantemente evoluindo e elevando minhas habilidades ao próximo nível.",
+    aboutDesc2: "A minha jornada no desenvolvimento de software começou em 2022 quando iniciei um TESP em Sistemas e Tecnologias de Informação (2022-2024). Posteriormente, adquiri experiência prática através de um estágio de 6 meses, que me permitiu aplicar as minhas habilidades em projetos do mundo real. Agora, estou a cursar uma licenciatura em Engenharia de Sistemas e Tecnologias de Informação para continuar a evoluir como desenvolvedor. Ao longo do caminho, trabalhei em diversos projetos, desde APIs até ferramentas Micro SaaS orientadas a dados, sempre em busca de aprender e me adaptar a novas tecnologias para entregar as melhores soluções.",
     
     // Skills
     skillsTitle: "Habilidades & Tecnologias",
