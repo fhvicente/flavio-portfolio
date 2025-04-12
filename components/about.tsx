@@ -1,10 +1,15 @@
+"use client"
+
+import { useTranslation } from "@/hooks/useTranslation"
 import { Button } from "@/components/ui/button"
 
 export function About() {
+  const { t } = useTranslation()
+  
   return (
     <section id="about" className="py-20 scroll-mt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center justify-center">
           <div>
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-muted-foreground mb-4">
@@ -30,8 +35,8 @@ export function About() {
               </a>
             </Button>
           </div>
-          <div className="bg-muted rounded-lg aspect-square flex items-center justify-center">
-            <img src="/images/profile.jpg" alt="Developer portrait" className="rounded-lg" />
+          <div className="max-w-[700px] mx-auto">
+            <img src="/images/profile.jpg" alt="Developer portrait" className="rounded-lg w-full" />
           </div>
         </div>
       </div>

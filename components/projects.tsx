@@ -1,13 +1,18 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink } from "lucide-react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { useTranslation } from "@/hooks/useTranslation"
 
 export function Projects() {
+  const { t } = useTranslation()
+  
   return (
     <section id="projects" className="py-20 scroll-mt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-10 text-center">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-10 text-center">{t("projectsTitle")}</h2>
         <div className="grid md:grid-cols-2 gap-8">
           
           {/* Project 1 */}
@@ -29,16 +34,13 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
                   >
-                    See project
+                    {t("seeProject")}
                     <ExternalLink size={20} />
                   </a>
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">
-                Development of an interactive web application to visualize data on LGBTI+ 
-                equality in Europe, with dynamic graphics and a responsive interface. 
-                I collaborated with a multidisciplinary team to deliver complex data 
-                visualizations in an accessible way.
+                {t("project1Description")}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Badge variant="outline">PHP</Badge>
@@ -90,7 +92,7 @@ export function Projects() {
             </div>
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold">Data Countries Visualization Dashboard</h3>
+                <h3 className="text-xl font-bold">{t("project2Title")}</h3>
                 <div className="flex gap-2">
                   <a
                     href="https://github.com"
@@ -106,14 +108,13 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
                   >
-                    See project
+                    {t("seeProject")}
                     <ExternalLink size={20} />
                   </a>
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">
-                An interactive dashboard for visualizing datasets with real-time updates, filtering
-                capabilities, and customizable search.
+                {t("project2Description")}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Badge variant="outline">Laravel</Badge>
@@ -163,7 +164,7 @@ export function Projects() {
             </div>
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold">Micro SaaS - "Horta Fácil"</h3>
+                <h3 className="text-xl font-bold">{t("project3Title")}</h3>
                 <div className="flex gap-2">
                   <a
                     href="https://hortafacil.fly.dev/"
@@ -171,14 +172,13 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
                   >
-                    See project
+                    {t("seeProject")}
                     <ExternalLink size={20} />
                   </a>
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">
-                Development of a micro SaaS for a local horticulturist to manage their business. 
-                The application allows the user to calculate the cost of their products and tools.  
+                {t("project3Description")}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Badge variant="outline">Laravel</Badge>
@@ -202,7 +202,7 @@ export function Projects() {
             </div>
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold">Contentor House</h3>
+                <h3 className="text-xl font-bold">{t("project4Title")}</h3>
                 <div className="flex gap-2">
                   <a
                     href="https://contentor-house.vercel.app/"
@@ -210,14 +210,13 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
                   >
-                    See project
+                    {t("seeProject")}
                     <ExternalLink size={20} />
                   </a>
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">
-                Development of a web application using WordPress in headless mode as CMS 
-                and Next.js on the frontend, developed for a container house company.
+                {t("project4Description")}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <Badge variant="outline">PHP</Badge>

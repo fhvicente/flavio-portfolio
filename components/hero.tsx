@@ -1,7 +1,12 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
+import { useTranslation } from "@/hooks/useTranslation"
 
 export function Hero() {
+  const { t } = useTranslation()
+  
   return (
     <section className="py-20 md:py-32 flex flex-col items-center text-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,14 +15,14 @@ export function Hero() {
           Full Stack Developer
         </p>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto mb-8">
-          Every line of code is a step in my growth.
+          {t("heroDescription")}
         </p>
         <div className="flex gap-4 justify-center">
-          <Button asChild>
-            <a href="#projects">View my work</a>
+          <Button asChild size="lg">
+            <a href="#projects">{t("projects")}</a>
           </Button>
-          <Button variant="outline" asChild>
-            <a href="#contact">Contact me</a>
+          <Button variant="outline" size="lg" asChild>
+            <a href="#contact">{t("getInTouch")}</a>
           </Button>
         </div>
         <div className="mt-16 flex animate-bounce justify-center">

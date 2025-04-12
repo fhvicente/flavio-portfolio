@@ -1,6 +1,11 @@
+"use client"
+
 import { Github, Linkedin, Mail } from "lucide-react"
+import { useTranslation } from "@/hooks/useTranslation"
 
 export function Footer() {
+  const { t } = useTranslation()
+  
   return (
     <footer className="border-t py-6 md:py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

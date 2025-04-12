@@ -1,13 +1,19 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Mail } from "lucide-react"
+import { useTranslation } from "@/hooks/useTranslation"
 
 export function Contact() {
+  const { t } = useTranslation()
+  
   return (
     <section id="contact" className="py-20 scroll-mt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold mb-10 text-center">{t("contactTitle")}</h2>
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-center">Get In Touch</h2>
+          {/* <h2 className="text-3xl font-bold mb-10 text-center">Get In Touch</h2> */}
           <div className="grid gap-8">
             <Card>
               <CardContent className="p-6">
