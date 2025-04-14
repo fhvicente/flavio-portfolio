@@ -95,15 +95,7 @@ export function Projects() {
                 <h3 className="text-xl font-bold">{t("project2Title")}</h3>
                 <div className="flex gap-2">
                   <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <Github size={20} />
-                  </a>
-                  <a
-                    href="https://project-demo.com"
+                    href="https://countryview.fly.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
@@ -205,7 +197,7 @@ export function Projects() {
                 <h3 className="text-xl font-bold">{t("project4Title")}</h3>
                 <div className="flex gap-2">
                   <a
-                    href="https://contentor-house.vercel.app/"
+                    href="https://contentorhouse.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
