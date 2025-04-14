@@ -7,7 +7,7 @@ export function About() {
   const { t, language } = useTranslation()
   
   // Define resume path based on language
-  const resumePath = language === 'en' ? '/resume/eng/resume.pdf' : '/resume/pt/curriculo.pdf'
+  const resumePath = language === 'en' ? '/resume/eng/resume-flavio-vicente.pdf' : '/resume/pt/curriculo-flavio-vicente.pdf'
   const resumeText = language === 'en' ? 'Download Resume' : 'Download do Currículo'
   
   return (
