@@ -53,6 +53,75 @@ export function Projects() {
             </CardContent>
           </Card>
 
+          {/* Project 5 */}
+          <Card className="overflow-hidden">
+            <div className="h-[400px] bg-muted">
+              <Carousel className="w-full h-full">
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="h-[400px] flex items-center justify-center">
+                      <img
+                        src="/images/projects/p5.png"
+                        alt="E-commerce platform screenshot 1"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="h-[400px] flex items-center justify-center">
+                      <img
+                        src="/images/projects/p5-1.png"
+                        alt="E-commerce platform screenshot 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="h-[400px] flex items-center justify-center">
+                      <img
+                        src="/images/projects/p5-2.png"
+                        alt="E-commerce platform screenshot 3"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
+            </div>
+            <CardContent className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-xl font-bold">{t("project5Title")}</h3>
+                <div className="flex gap-2">
+                  <a
+                    href="https://subtrack.fly.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-bold hover:text-foreground transition-colors"
+                  >
+                    {t("seeProject")}
+                    <ExternalLink size={20} />
+                  </a>
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                {t("project5Description")}
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                <Badge variant="outline">Node.js</Badge>
+                <Badge variant="outline">Espress</Badge>
+                <Badge variant="outline">SQLite</Badge>
+                <Badge variant="outline">Next.js</Badge>
+                <Badge variant="outline">React</Badge>
+                <Badge variant="outline">TailwindCSS</Badge>
+                <Badge variant="outline">JWT</Badge>
+                <Badge variant="outline">SendGrip</Badge>
+                <Badge variant="outline">Stripe</Badge>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Project 2 */}
           <Card className="overflow-hidden">
             <div className="h-[400px] bg-muted">

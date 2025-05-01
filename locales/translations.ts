@@ -29,7 +29,7 @@ export const translations = {
     // Project 1
     project1Title: "Rainbow Map Europe",
     project1Description: "Development of an interactive web application to visualize data on LGBTI+ equality in Europe, with dynamic graphics and a responsive interface. I collaborated with a multidisciplinary team to deliver complex data visualizations in an accessible way.",
-    
+        
     // Project 2
     project2Title: "Data Countries Visualization Dashboard",
     project2Description: "An interactive dashboard for visualizing datasets with real-time updates, filtering capabilities, and customizable search.",
@@ -41,6 +41,10 @@ export const translations = {
     // Project 4
     project4Title: "Contentor House",
     project4Description: "Development of a web application using WordPress in headless mode as CMS and Next.js on the frontend, developed for a container house company.",
+
+    // Project 5
+    project5Title: "Subscription Tracker",
+    project5Description: "A simple and effective tool to manage your subscriptions and save money.",
     
     // Contact
     contactTitle: "Get in Touch",
@@ -97,6 +101,10 @@ export const translations = {
     // Project 4
     project4Title: "Contentor House",
     project4Description: "Desenvolvimento de uma aplicação web usando WordPress em modo headless como CMS e Next.js no frontend, desenvolvido para uma empresa de casas contêiner.",
+
+    // Project 5
+    project5Title: "Rastreador de subscrições",
+    project5Description: "Uma ferramenta simples e eficaz para gerir as suas subscrições e poupar dinheiro.",
     
     // Contact
     contactTitle: "Entre em Contato",
