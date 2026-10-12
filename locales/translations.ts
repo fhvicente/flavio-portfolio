@@ -23,6 +23,7 @@ export const translations = {
         backendTitle: "Backend",
         databaseTitle: "Database",
         toolsTitle: "Tools & Others",
+        aiTitle: "AI",
 
         // Projects
         projectsTitle: "Featured Projects",
@@ -94,6 +95,7 @@ export const translations = {
         backendTitle: "Backend",
         databaseTitle: "Banco de Dados",
         toolsTitle: "Ferramentas & Outros",
+        aiTitle: "IA",
 
         // Projects
         projectsTitle: "Projetos em Destaque",
