@@ -19,30 +19,15 @@ export function Header() {
                         </a>
                     </div>
                     <nav className="hidden md:flex gap-6">
-                        <a
-                            href="#about"
-                            className="text-sm font-medium hover:text-primary transition-colors"
-                        >
-                            {t("about")}
-                        </a>
-                        <a
-                            href="#skills"
-                            className="text-sm font-medium hover:text-primary transition-colors"
-                        >
-                            {t("skills")}
-                        </a>
-                        <a
-                            href="#projects"
-                            className="text-sm font-medium hover:text-primary transition-colors"
-                        >
-                            {t("projects")}
-                        </a>
-                        <a
-                            href="#contact"
-                            className="text-sm font-medium hover:text-primary transition-colors"
-                        >
-                            {t("contact")}
-                        </a>
+                        {(["about", "skills", "projects", "contact"] as const).map((k) => (
+                            <a
+                                key={k}
+                                href={`#${k}`}
+                                className="text-sm font-medium hover:text-primary transition-colors"
+                            >
+                                {t(k)}
+                            </a>
+                        ))}
                     </nav>
                     <div className="flex items-center gap-4">
                         <ThemeToggle />

@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail } from "lucide-react";
+import { socials } from "@/lib/socials";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export function Footer() {
@@ -11,32 +11,21 @@ export function Footer() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
                     <div className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} Flávio Vicente. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Flávio Vicente. {t("footerRights")}
                     </div>
                     <div className="flex gap-4">
-                        <a
-                            href="https://github.com/fhvicente/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
-                        >
-                            <Github size={20} />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/fhsvicente/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
-                        >
-                            <Linkedin size={20} />
-                        </a>
-                        <a
-                            href="mailto:flaviohenriquevicente@hotmail.com"
-                            className="text-muted-foreground hover:text-foreground transition-colors"
-                        >
-                            <Mail size={20} />
-                        </a>
+                        {socials.map(({ href, label, Icon }) => (
+                            <a
+                                key={label}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={label}
+                                className="text-muted-foreground hover:text-foreground transition-colors"
+                            >
+                                <Icon size={20} />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>
