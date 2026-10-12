@@ -19,7 +19,7 @@ export function Skills() {
                 <h2 className="text-3xl font-bold mb-10 text-center">{t("skillsTitle")}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {Object.entries(skills).map(([title, items]) => (
-                        <div key={title} className="bg-card p-6 rounded-lg shadow-sm border">
+                        <div key={title} data-anim="skill" className="bg-card p-6 rounded-lg shadow-sm border">
                             <h3 className="text-xl font-bold mb-4">{t(title as keyof typeof skills)}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {items.map((item) => (

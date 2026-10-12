@@ -8,34 +8,40 @@ import { useTranslation } from "@/hooks/useTranslation";
 
 const projects = [
     {
+        n: 6,
+        url: "https://growzy-ivory.vercel.app",
+        images: ["p6.png"],
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Drizzle", "Better Auth", "Stripe", "GSAP"],
+    },
+    {
+        n: 5,
+        url: "https://subtrack-three-chi.vercel.app",
+        images: ["p5.png"],
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Better Auth", "Stripe", "SendGrid", "Vitest"],
+    },
+    {
+        n: 7,
+        url: "https://dopamineshop-kappa.vercel.app",
+        images: ["p7.png"],
+        tags: ["Next.js", "TypeScript", "tRPC", "Drizzle", "PostgreSQL", "Tailwind CSS", "Framer Motion", "next-intl"],
+    },
+    {
+        n: 8,
+        url: "https://qr-generator-gules-ten.vercel.app",
+        images: ["p8.png"],
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "next-intl"],
+    },
+    {
+        n: 9,
+        url: "https://github.com/fhvicente/yt-cuts",
+        images: ["p9.png"],
+        tags: ["Python", "FastAPI", "FFmpeg", "yt-dlp", "Deepgram", "Claude API", "OpenAI"],
+    },
+    {
         n: 1,
         url: "https://rainbowmap.ilga-europe.org/",
         images: ["p1.png"],
         tags: ["PHP", "JavaScript", "MySQL", "Highcharts", "Wordpress", "Python"],
-    },
-    {
-        n: 5,
-        url: "https://subtrack.fly.dev",
-        images: ["p5.png", "p5-1.png", "p5-2.png"],
-        tags: ["Node.js", "Express", "SQLite", "Next.js", "React", "TailwindCSS", "JWT", "SendGrid", "Stripe"],
-    },
-    {
-        n: 2,
-        url: "https://countryview.fly.dev/",
-        images: ["p2-1.png", "p2-2.png", "p2-3.png"],
-        tags: ["Laravel", "Tailwind CSS", "Typescript", "Inertia.js"],
-    },
-    {
-        n: 3,
-        url: "https://hortafacil.fly.dev/",
-        images: ["p3-1.png", "p3-2.png", "p3-3.png"],
-        tags: ["Laravel", "Inertia.js", "Tailwind CSS", "JavaScript", "SQLite", "Stripe"],
-    },
-    {
-        n: 4,
-        url: "https://contentorhouse.vercel.app/",
-        images: ["p4.png"],
-        tags: ["PHP", "Next.js", "Typescript", "Wordpress", "Inertia.js", "Tailwind CSS", "JavaScript"],
     },
 ] as const;
 
@@ -53,18 +59,18 @@ export function Projects() {
                             <img
                                 src={`/images/projects/${src}`}
                                 alt={`${title} screenshot ${i + 1}`}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                             />
                         );
                         return (
-                            <Card key={n} className="overflow-hidden">
+                            <Card key={n} data-anim="project" className="group overflow-hidden transition-shadow duration-300 hover:shadow-lg">
                                 {images.length === 1 ? (
                                     <div className="aspect-video bg-muted">{img(images[0], 0)}</div>
                                 ) : (
-                                    <Carousel className="h-[400px] bg-muted">
-                                        <CarouselContent>
+                                    <Carousel className="bg-muted">
+                                        <CarouselContent className="ml-0">
                                             {images.map((src, i) => (
-                                                <CarouselItem key={src} className="h-[400px]">
+                                                <CarouselItem key={src} className="pl-0 aspect-video">
                                                     {img(src, i)}
                                                 </CarouselItem>
                                             ))}

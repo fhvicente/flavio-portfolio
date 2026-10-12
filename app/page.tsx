@@ -5,6 +5,7 @@ import { Skills } from "@/components/skills";
 import { Projects } from "@/components/projects";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import { Animations } from "@/components/animations";
 
 export default function Portfolio() {
     return (
@@ -18,6 +19,7 @@ export default function Portfolio() {
                 <Contact />
             </main>
             <Footer />
+            <Animations />
         </div>
     );
 }

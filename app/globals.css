@@ -177,3 +177,10 @@
         @apply bg-background text-foreground;
     }
 }
+
+/* Hidden until the GSAP intro runs, so the hero doesn't flash before hydration */
+@media (prefers-reduced-motion: no-preference) {
+    [data-anim="hero"] > * {
+        visibility: hidden;
+    }
+}

@@ -33,24 +33,33 @@ export const translations = {
         project1Description:
             "Development of an interactive web application to visualize data on LGBTI+ equality in Europe, with dynamic graphics and a responsive interface. I collaborated with a multidisciplinary team to deliver complex data visualizations in an accessible way.",
 
-        // Project 2
-        project2Title: "Data Countries Visualization Dashboard",
-        project2Description:
-            "An interactive dashboard for visualizing datasets with real-time updates, filtering capabilities, and customizable search.",
 
-        // Project 3
-        project3Title: 'Micro SaaS - "Horta Fácil"',
-        project3Description:
-            "Development of a micro SaaS for a local horticulturist to manage their business. The application allows the user to calculate the cost of their products and tools.",
 
-        // Project 4
-        project4Title: "Contentor House",
-        project4Description:
-            "Development of a web application using WordPress in headless mode as CMS and Next.js on the frontend, developed for a container house company.",
 
         // Project 5
-        project5Title: "Subscription Tracker",
-        project5Description: "A simple and effective tool to manage your subscriptions and save money.",
+        project5Title: "SubTrack",
+        project5Description:
+            "SaaS that keeps all your subscriptions in one list, shows what they really cost per year and emails you before each renewal. Free and Premium plans with Stripe, plus an admin panel.",
+
+        // Project 6
+        project6Title: "Growzy",
+        project6Description:
+            "Plan a small vegetable garden before buying anything: how many plants fit, shopping list and cost, watering plan, planting calendar per region and how long until it pays for itself. SaaS with Stripe subscriptions.",
+
+        // Project 7
+        project7Title: "Dopamine Shopping",
+        project7Description:
+            "A parody online shop where you can \"buy\" anything and the final price is always €0.00. Full shopping flow with cart, checkout, fake live delivery tracking on a map and multiple languages.",
+
+        // Project 8
+        project8Title: "QRkit",
+        project8Description:
+            "Free QR code generator with no sign-up, running entirely in the browser. Supports URL, WiFi, email, phone, SMS and vCard, with custom colors and logo, and exports to PNG, SVG, JPG and PDF. Available in 4 languages.",
+
+        // Project 9
+        project9Title: "yt-cuts",
+        project9Description:
+            "Tool that turns a YouTube video into vertical 9:16 clips with word-by-word subtitles, ready for Shorts, Reels and TikTok. An LLM picks the best moments from the transcript and FFmpeg does the cutting and rendering.",
 
         // Contact
         contactTitle: "Get in Touch",
@@ -95,24 +104,33 @@ export const translations = {
         project1Description:
             "Desenvolvimento de uma aplicação web interativa para visualizar dados sobre igualdade LGBTI+ na Europa, com gráficos dinâmicos e interface responsiva. Colaborei com uma equipe multidisciplinar para entregar visualizações de dados complexas de forma acessível.",
 
-        // Project 2
-        project2Title: "Dashboard de Visualização de Dados de Países",
-        project2Description:
-            "Um dashboard interativo para visualização de conjuntos de dados com atualizações em tempo real, recursos de filtragem e pesquisa personalizável.",
 
-        // Project 3
-        project3Title: 'Micro SaaS - "Horta Fácil"',
-        project3Description:
-            "Desenvolvimento de um micro SaaS para um horticultor local gerenciar seu negócio. A aplicação permite ao usuário calcular o custo de seus produtos e ferramentas.",
 
-        // Project 4
-        project4Title: "Contentor House",
-        project4Description:
-            "Desenvolvimento de uma aplicação web usando WordPress em modo headless como CMS e Next.js no frontend, desenvolvido para uma empresa de casas contêiner.",
 
         // Project 5
-        project5Title: "Rastreador de subscrições",
-        project5Description: "Uma ferramenta simples e eficaz para gerir as suas subscrições e poupar dinheiro.",
+        project5Title: "SubTrack",
+        project5Description:
+            "SaaS que junta todas as subscrições numa lista, mostra quanto custam realmente por ano e envia um email antes de cada renovação. Planos Free e Premium com Stripe e painel de administração.",
+
+        // Project 6
+        project6Title: "Growzy",
+        project6Description:
+            "Planeia uma pequena horta antes de comprar o que quer que seja: quantas plantas cabem, lista de compras e custo, plano de rega, calendário de sementeira por região e em quanto tempo se paga. SaaS com subscrições Stripe.",
+
+        // Project 7
+        project7Title: "Dopamine Shopping",
+        project7Description:
+            "Loja online paródia onde se pode \"comprar\" tudo e o preço final é sempre 0,00 €. Fluxo de compra completo com carrinho, checkout, seguimento de entrega fictício num mapa e vários idiomas.",
+
+        // Project 8
+        project8Title: "QRkit",
+        project8Description:
+            "Gerador de códigos QR gratuito e sem registo, que corre todo no browser. Suporta URL, WiFi, email, telefone, SMS e vCard, com cores e logótipo personalizados, e exporta para PNG, SVG, JPG e PDF. Disponível em 4 idiomas.",
+
+        // Project 9
+        project9Title: "yt-cuts",
+        project9Description:
+            "Ferramenta que transforma um vídeo do YouTube em clips verticais 9:16 com legendas palavra a palavra, prontos para Shorts, Reels e TikTok. Um LLM escolhe os melhores momentos a partir da transcrição e o FFmpeg faz os cortes e o render.",
 
         // Contact
         contactTitle: "Entre em Contato",

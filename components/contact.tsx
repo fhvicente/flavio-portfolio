@@ -12,7 +12,7 @@ export function Contact() {
         <section id="contact" className="py-20 scroll-mt-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold mb-10 text-center">{t("contactTitle")}</h2>
-                <Card className="max-w-2xl mx-auto">
+                <Card data-anim="contact" className="max-w-2xl mx-auto">
                     <CardContent className="p-6">
                         <div className="flex flex-col items-center text-center gap-4">
                             <p className="text-muted-foreground mb-6">{t("contactDescription")}</p>
